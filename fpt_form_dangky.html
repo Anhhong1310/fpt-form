@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký tư vấn FPT</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f6fa;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 480px;
+    }
+    h2 {
+      text-align: center;
+      color: #e67e22;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #ff6600;
+      color: white;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #e65c00;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="https://formspree.io/f/xjkrdkpg" method="POST">
+    <h2>Đăng ký tư vấn dịch vụ FPT</h2>
+
+    <label for="name">Họ và tên</label>
+    <input type="text" id="name" name="Họ và tên" placeholder="Nguyễn Văn A">
+
+    <label for="phone">Số điện thoại <span style="color:red">*</span></label>
+    <input type="tel" id="phone" name="Số điện thoại" placeholder="09xxxxxxxx" required>
+
+    <label for="address">Địa chỉ lắp đặt</label>
+    <input type="text" id="address" name="Địa chỉ lắp đặt" placeholder="Phường/Xã, Quận/Huyện, Tỉnh/TP">
+
+    <label for="service">Gói dịch vụ quan tâm</label>
+    <select id="service" name="Gói dịch vụ quan tâm">
+      <option value="">-- Chọn gói --</option>
+      <option value="WiFi">WiFi</option>
+      <option value="Camera">Camera</option>
+      <option value="Combo">Combo</option>
+      <option value="Play Box">Play Box</option>
+    </select>
+
+    <label for="note">Ghi chú thêm</label>
+    <textarea id="note" name="Ghi chú thêm" rows="3" placeholder="Thời gian liên hệ, yêu cầu đặc biệt..."></textarea>
+
+    <button type="submit">Gửi đăng ký</button>
+  </form>
+
+</body>
+</html>
